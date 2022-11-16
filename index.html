@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>格帝集團名片</title>
+    <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script>
+        //==========================LIFF API初始化================================
+        $(document).ready(function() {
+            liff.init({
+                liffId: "1657652244-7M9VXNO4"
+            });
+        });
+        //==========================LIFF API初始化================================
+
+        function liff_LINE_Card() {
+            liff.shareTargetPicker(
+                [{
+                    "type": "flex",
+                    "altText": "名片測試",
+                    "contents":{
+						"type": "bubble",
+						"hero": {
+							"type": "box",
+							"layout": "vertical",
+							"contents": [
+							{
+								"type": "text",
+								"text": "hello, world"
+							}
+							]
+						}
+					}
+                }], {
+                    isMultiple: true,
+                }
+            );
+        }
+    </script>
+	
+    <style>
+        h1 {
+            width: 80%;
+            height: 40px;
+            margin-left: 10%;
+        }
+        
+        button {
+            width: 80%;
+            height: 40px;
+            margin-left: 10%;
+            background-color: #c9e8e3;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>名片測試</h1>
+    <button onclick="liff_LINE_Card()">傳送LINE名片</button><br /><br />
+    <br /><br />
+</body>
+
+</html>
