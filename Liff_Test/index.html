@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>格帝集團名片</title>
+    <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script>
+        //==========================LIFF API初始化================================
+        $(document).ready(function() {
+            liff.init({
+                liffId: "1657652244-7M9VXNO4"
+            });
+        });
+        //==========================LIFF API初始化================================
+
+        function liff_LINE_Card_1() {
+            liff.shareTargetPicker(
+                [{
+                    type: "flex",
+                    altText: "Maso的LINE名片",
+                    contents: {{
+						"type": "bubble",
+						"hero": {
+							"type": "image",
+							"url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png",
+							"size": "full",
+							"aspectRatio": "20:13",
+							"aspectMode": "cover",
+							"action": {
+							"type": "uri",
+							"uri": "http://linecorp.com/"
+							}
+						},
+						"body": {
+							"type": "box",
+							"layout": "vertical",
+							"contents": [
+							{
+								"type": "text",
+								"text": "Brown Cafe",
+								"weight": "bold",
+								"size": "xl"
+							},
+							{
+								"type": "box",
+								"layout": "baseline",
+								"margin": "md",
+								"contents": [
+								{
+									"type": "icon",
+									"size": "sm",
+									"url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+								},
+								{
+									"type": "icon",
+									"size": "sm",
+									"url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+								},
+								{
+									"type": "icon",
+									"size": "sm",
+									"url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+								},
+								{
+									"type": "icon",
+									"size": "sm",
+									"url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+								},
+								{
+									"type": "icon",
+									"size": "sm",
+									"url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png"
+								},
+								{
+									"type": "text",
+									"text": "4.0",
+									"size": "sm",
+									"color": "#999999",
+									"margin": "md",
+									"flex": 0
+								}
+								]
+							},
+							{
+								"type": "box",
+								"layout": "vertical",
+								"margin": "lg",
+								"spacing": "sm",
+								"contents": [
+								{
+									"type": "box",
+									"layout": "baseline",
+									"spacing": "sm",
+									"contents": [
+									{
+										"type": "text",
+										"text": "Place",
+										"color": "#aaaaaa",
+										"size": "sm",
+										"flex": 1
+									},
+									{
+										"type": "text",
+										"text": "Miraina Tower, 4-1-6 Shinjuku, Tokyo",
+										"wrap": true,
+										"color": "#666666",
+										"size": "sm",
+										"flex": 5
+									}
+									]
+								},
+								{
+									"type": "box",
+									"layout": "baseline",
+									"spacing": "sm",
+									"contents": [
+									{
+										"type": "text",
+										"text": "Time",
+										"color": "#aaaaaa",
+										"size": "sm",
+										"flex": 1
+									},
+									{
+										"type": "text",
+										"text": "10:00 - 23:00",
+										"wrap": true,
+										"color": "#666666",
+										"size": "sm",
+										"flex": 5
+									}
+									]
+								}
+								]
+							}
+							]
+						},
+						"footer": {
+							"type": "box",
+							"layout": "vertical",
+							"spacing": "sm",
+							"contents": [
+							{
+								"type": "button",
+								"style": "link",
+								"height": "sm",
+								"action": {
+								"type": "uri",
+								"label": "CALL",
+								"uri": "https://linecorp.com"
+								}
+							},
+							{
+								"type": "button",
+								"style": "link",
+								"height": "sm",
+								"action": {
+								"type": "uri",
+								"label": "WEBSITE",
+								"uri": "https://linecorp.com"
+								}
+							},
+							{
+								"type": "box",
+								"layout": "vertical",
+								"contents": [],
+								"margin": "sm"
+							}
+							],
+							"flex": 0
+						}
+						}
+                    }
+                }], {
+                    isMultiple: true,
+                }
+            );
+        }
+
+    </script>
+    <style>
+        h1 {
+            width: 80%;
+            height: 40px;
+            margin-left: 10%;
+        }
+        
+        button {
+            width: 80%;
+            height: 40px;
+            margin-left: 10%;
+            background-color: #c9e8e3;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>名片測試</h1>
+    <button onclick="liff_LINE_Card_1()">傳送LINE名片</button><br /><br />
+    <br /><br />
+</body>
+
+</html>
