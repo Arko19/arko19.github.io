@@ -21,46 +21,53 @@
             liff.shareTargetPicker(
                 [{
                     "type": "flex",
-                    "altText": "名片測試",
+                    "altText": "豪皓影像工作室",
                     "contents":{
 						"type": "bubble",
 						"hero": {
 							"type": "image",
-							"url": "https://i.imgur.com/dcdXVTD.jpg",
+							"url": "https://i.imgur.com/0ATHtI6.png",
 							"size": "full",
-							"aspectRatio": "20:13",
-							"aspectMode": "cover"
+							"aspectRatio": "20:9",
+							"aspectMode": "fit"
 						},
 						"body": {
 							"type": "box",
 							"layout": "vertical",
 							"contents": [
 							{
-								"type": "text",
-								"text": "吳筱雯",
-								"weight": "bold",
-								"size": "xxl"
+								"type": "box",
+								"layout": "horizontal",
+								"contents": [
+								{
+									"type": "text",
+									"text": "周楠皓",
+									"size": "3xl",
+									"weight": "bold"
+								},
+								{
+									"type": "text",
+									"text": "Arko Chou",
+									"size": "xl",
+									"weight": "bold",
+									"offsetEnd": "md",
+									"offsetTop": "xl"
+								}
+								]
 							},
 							{
-								"type": "text",
-								"text": "思索柏股份有限公司",
-								"size": "md",
-								"weight": "bold"
-							},
-							{
-								"type": "text",
-								"text": "StoryTable Co., Ltd.",
-								"size": "xxs"
-							},
-							{
-								"type": "text",
-								"text": "副總監",
-								"weight": "bold"
-							},
-							{
-								"type": "text",
-								"text": "Associate Director",
-								"size": "xxs"
+								"type": "box",
+								"layout": "vertical",
+								"contents": [
+								{
+									"type": "text",
+									"text": "0926-063-797"
+								},
+								{
+									"type": "text",
+									"text": "ahow188@gmail.com"
+								}
+								]
 							}
 							]
 						},
@@ -71,26 +78,24 @@
 							{
 								"type": "button",
 								"style": "link",
-								"height": "sm",
 								"action": {
-									"type": "uri",
-									"label": "作品集",
-									"uri": "https://youtube.com/playlist?list=PLd-g4dZUZLL-ks0WUm9UjTqA9ekbPwTNo"
+								"type": "uri",
+								"label": "作品集",
+								"uri": "https://youtube.com/playlist?list=PLNy3dfuvyipYiSpn1jojE6uz5YgM6_b0-"
 								},
-							},
-							{
-								"type": "button",
-								"style": "link",
-								"height": "sm",
-								"action": {
-									"type": "uri",
-									"label": "聯絡我",
-									"uri": "https://line.me/ti/p/WqpkN6BtBz"
-								}
+								"height": "sm"
 							}
 							]
+						},
+						"styles": {
+							"body": {
+							"separator": true
+							},
+							"footer": {
+							"separator": true
+							}
 						}
-					}
+						}
                 }], {
                     isMultiple: true,
                 }
